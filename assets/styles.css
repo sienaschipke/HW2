@@ -1,0 +1,92 @@
+:root {
+    --medium-blue: #A8D4FA;
+    --dark-blue: #15446B;
+    --light-blue: #cfe6f9;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    border: 1px solid red;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--light-blue);
+}
+
+header {
+    background-color: var(--medium-blue);
+    color: var(--dark-blue);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-left: 3rem;
+    font-size: 5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    /* position: relative; */
+    display: inline;
+    color: var(--dark-blue);
+    font-weight: 1000;
+    padding: 0 1rem;
+    font-size: 2rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    color: var(--dark-blue);
+}
+
+.hero-image {
+    background-image: url(./pexels-jmark-250591.jpg) ;
+    height: 30rem;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.hero-text {
+    color: var(--dark-blue);
+    background-color: var(--medium-blue);
+    padding-right: 5rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+#about-me {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 4rem;
+}
+
+#about-me h3 {
+    font-size: 4rem;
+    color: var(--dark-blue);
+    padding-right: 3rem;
+}
+
+#about-me h3::after {
+    content: 
+}
+
+#about-me p {
+    font-size: 2rem;
+    width: 100%;
+    color: var(--dark-blue);
+    border-left: 5px dotted var(--dark-blue);
+
+}
