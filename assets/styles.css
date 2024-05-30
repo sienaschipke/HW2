@@ -6,7 +6,7 @@
 
 * {
     font-family: "Raleway", sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html {
@@ -51,6 +51,12 @@ nav li a {
     color: var(--dark-blue);
 }
 
+nav li a:hover, nav li:hover {
+    background-color: var(--dark-blue);
+    color: var(--medium-blue);
+    border-radius: 4rem;
+}
+
 .hero-image {
     background-image: url(./pexels-jmark-250591.jpg) ;
     height: 30rem;
@@ -65,28 +71,88 @@ nav li a {
     padding-right: 5rem;
     font-size: 2rem;
     margin-bottom: 3rem;
+    box-shadow: 1rem 0.5rem 0.5rem #ddd;
 }
 
-#about-me {
+#about-me, #projects {
     display: flex;
     align-items: flex-start;
     margin: 1rem 4rem;
 }
 
-#about-me h3 {
+main section h3 {
     font-size: 4rem;
     color: var(--dark-blue);
     padding-right: 3rem;
+    border-right: 5px dotted var(--dark-blue);
+
 }
 
-#about-me h3::after {
-    content: 
-}
 
 #about-me p {
     font-size: 2rem;
     width: 100%;
     color: var(--dark-blue);
-    border-left: 5px dotted var(--dark-blue);
-
 }
+
+.main-project {
+    background-image: url(./Screenshot\ 2024-05-30\ at\ 9.49.18\ AM.png);
+    height: 40rem;
+    width: 100%;
+}
+
+.project-2, .project-3, .project-4, .project-5 {
+    height: auto;
+    max-width: 100%;
+}
+
+.project-2 {
+    background-image: url(./pexels-brett-sayles-992734.jpg);
+}
+
+.project-3 {
+    background-image: url(./pexels-iriser-1408221.jpg);
+}
+
+#contact-me {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+}
+
+#contact-me h3 {
+    margin-left: 4rem;
+    color: var(--light-blue)
+}
+
+#contact-me ul {
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact-me li {
+    list-style: none;
+    display: inline;
+    color: var(--light-blue);
+    font-weight: 1000;
+    padding: 0 1rem;
+    font-size: 2rem;
+    margin: 0 2rem;
+}
+
+#contact-me li a {
+    text-decoration: none;
+    color: black;
+    color: var(--light-blue);
+}
+
+#contact-me li a:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    border-radius: 4rem;
+    padding: 1rem 0;
+}
+
+
