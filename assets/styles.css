@@ -78,36 +78,58 @@ nav li a:hover, nav li:hover {
     display: flex;
     align-items: flex-start;
     margin: 1rem 4rem;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 main section h3 {
     font-size: 4rem;
     color: var(--dark-blue);
     padding-right: 3rem;
-    border-right: 5px dotted var(--dark-blue);
+}
+
+#about-me-content {
+    display: flex;
+    flex-direction: column;
 }
 
 #about-me p {
     font-size: 2rem;
     width: 100%;
     color: var(--dark-blue);
+    border-left: 5px dotted var(--dark-blue);
+    padding-left: 1rem;
+}
+
+#projects {
+    flex-wrap: wrap;
+}
+
+.projects-container {
+    border-left: 5px dotted var(--dark-blue);
 }
 
 .main-project {
     background-image: url(./Screenshot\ 2024-05-30\ at\ 9.49.18\ AM.png);
     height: 40rem;
     width: 100%;
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .project-2, .project-3, .project-4, .project-5 {
-    height: auto;
-    width: 40%;
+    height: 300px;
+    width: 47.6%;
     max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .project-2 {
     background-image: url(./pexels-brett-sayles-992734.jpg);
+    
 }
 
 .project-3 {
@@ -175,5 +197,4 @@ main section h3 {
     border-radius: 4rem;
     padding: 1rem 0;
 }
-
 
