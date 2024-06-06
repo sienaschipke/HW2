@@ -6,7 +6,6 @@
 
 * {
     font-family: "Raleway", sans-serif;
-    border: 1px solid red;
 }
 
 html {
@@ -37,7 +36,6 @@ nav {
 
 nav li {
     list-style: none;
-    /* position: relative; */
     display: inline;
     color: var(--dark-blue);
     font-weight: 1000;
@@ -91,45 +89,59 @@ main section h3 {
 #about-me-content {
     display: flex;
     flex-direction: column;
+    border-left: 5px dotted var(--dark-blue);
+    width: 98%;
 }
 
 #about-me p {
     font-size: 2rem;
-    width: 100%;
     color: var(--dark-blue);
-    border-left: 5px dotted var(--dark-blue);
-    padding-left: 1rem;
+    margin: 1rem;
 }
 
 #projects {
     flex-wrap: wrap;
+    direction: row;
 }
 
 .projects-container {
     border-left: 5px dotted var(--dark-blue);
+    padding: 1rem;
+    width: 85%;
 }
 
 .main-project {
     background-image: url(./Screenshot\ 2024-05-30\ at\ 9.49.18\ AM.png);
     height: 40rem;
     width: 100%;
-    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#smaller-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .project-2, .project-3, .project-4, .project-5 {
     height: 300px;
     width: 47.6%;
-    max-width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .project-2 {
     background-image: url(./pexels-brett-sayles-992734.jpg);
-    
 }
 
 .project-3 {
@@ -144,17 +156,17 @@ main section h3 {
     background-image: url(./pexels-pixabay-158756.jpg);
 }
 
-#projects div {
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    margin: 1rem;
-}
-
 #projects div h4 {
     font-size: 3rem;
     background-color: var(--medium-blue);
     color: var(--dark-blue);
+}
+
+#projects div p {
+    background-color: var(--medium-blue);
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 #contact-me {
