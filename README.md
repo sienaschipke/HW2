@@ -15,10 +15,10 @@ I used Josh Comeau's CSS reset that can be found on his [online blog](https://ww
 
 ## Images
 
-![website screenshot]()
-![website screenshot]()
-![website screenshot]()
+![website screenshot](./assets/Screenshot%202024-06-06%20at%205.26.56 PM.png)
+![website screenshot](./assets/Screenshot%202024-06-06%20at%205.27.09 PM.png)
+![website screenshot](./assets/Screenshot%202024-06-06%20at%205.27.18 PM.png)
 
 
 ## URL
-[Portfolio]()
+[Portfolio](https://sienaschipke.github.io/HW2/)
